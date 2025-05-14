@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  host: 0.0.0.0
+
+observe:
+  enabled: true
+  health:
+    enabled: true
+    details: true
+    endpoint: /observe/health
+  metrics:
+    enabled: true
+    endpoint: /observe/metrics
+
+logging:
+  level:
+    io.helidon: INFO
+    com.example.myproject: DEBUG
